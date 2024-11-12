@@ -436,7 +436,7 @@ print('Les 5 journées où la longueur totale sont les plus faibles, '
       'soit de {:.2f} kilomètres :'.format(longueur_service_min['longueur'].values[0] / 1000))
 for date in top5_date_longueur_min['date']:
     print(date.strftime('%Y-%m-%d'))
-
+print('------------------------')
 # ***************************************************************************************
 # 6. Pourriez-vous générer un fichier GeoJson de l’image du réseau pour la plage 11 h à 13 h un mercredi ?
 
