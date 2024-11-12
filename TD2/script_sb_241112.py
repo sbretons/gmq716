@@ -4,8 +4,6 @@
 # Importation des librairies
 import pandas as pd
 import geopandas as gpd
-import shapely
-import fiona
 from shapely.geometry import Point, LineString
 
 # CRÉATION DES VARIABLES GLOBALES DE VALEURS CONSTANTES
