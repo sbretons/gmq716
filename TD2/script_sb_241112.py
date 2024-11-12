@@ -376,10 +376,10 @@ for stop_id, stop_name, route_id, route_long_name, service_id, trip_id in zip(gd
 print('------------------------')
 
 
-# # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
-# # # ***************************************************************************************
+# # ***************************************************************************************
 # Question 4.
 # Si on utilise l’empreinte des circuits de ligne de bus de la STS et les îlots, peut-on connaître le
 # circuit de bus qui couvrent le plus de personnes ? (on pourrait vérifier les îlots qui sont
@@ -408,8 +408,6 @@ pop_by_circuit_sorted_merge_ligne['route_id'] = pop_by_circuit_sorted_merge_lign
 # print(pop_by_circuit_sorted_merge_ligne)
 circuit_populaire = pop_by_circuit_sorted_merge_ligne.iloc[0]
 
-# # 3. Trouver le circuit qui touche le plus de population
-# circuit_max_pop = pop_by_circuit.loc[pop_by_circuit['DBPOP2021_IDPOP2021'].idxmax()]
 
 # Afficher les résultats
 print(f"Le circuit qui touche le plus de population est le circuit {circuit_populaire['trip_id']} emprunté par la ligne de bus {circuit_populaire['route_id']} "f"avec une population totale de {circuit_populaire['DBPOP2021_IDPOP2021']}.")
@@ -438,7 +436,7 @@ print('Les 5 journées où la longueur totale sont les plus faibles, '
       'soit de {:.2f} kilomètres :'.format(longueur_service_min['longueur'].values[0] / 1000))
 for date in top5_date_longueur_min['date']:
     print(date.strftime('%Y-%m-%d'))
-
+print('------------------------')
 # ***************************************************************************************
 # 6. Pourriez-vous générer un fichier GeoJson de l’image du réseau pour la plage 11 h à 13 h un mercredi ?
 
